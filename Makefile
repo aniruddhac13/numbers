@@ -16,8 +16,9 @@ testnum: test.o libnum.a
 test: testnum
 	./testnum input.txt expout.txt
 
-deploy: libnum.a
+deploy: libnum.a prime.h
 	/bin/cp libnum.a /usr/local/lib/numutils/
+	/bin/cp prime.h /usr/local/include/numutils/
 
 clean:
 	rm *.o libnum.a testnum
