@@ -10,8 +10,8 @@ int isPrime(int num)
 {
     int fact;
 
-    if(num == 0 || num == 1)
-        return 0;
+    /* if(num == 0 || num == 1)
+        return 0; */
 
     for(fact = 2; fact < num - 1; fact++)
     {
